@@ -1,0 +1,98 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+class usermenu extends JPanel
+{
+	JLabel L1,L2,L3,L4,L5,L6,L7,L8,L9,L10,L11,L12,L13;
+	JButton b1,b2,b3,b4,b5;
+	JComboBox cb1;
+//	String subject[] ={"  ","APPTITUDE","ENGLISH","HINDI","SCIENCE"};
+	usermenu()
+	{
+		setLayout(null);
+		Color c = new Color(176,196,222);
+		setBackground(c);
+		Font f = new Font("Arial Rounded MT BOLD",Font.BOLD,20);
+		Font f1 = new Font("Corsiva Hebrew",Font.BOLD,30);
+		Font f2 = new Font("Corsiva Hebrew",Font.BOLD,20);
+		L1 = new JLabel("WELCOME  ");
+		L1.setBounds(800,50,300,70);
+		L1.setFont(f1);
+		add(L1);
+		L6 = new JLabel("");
+		L6.setBounds(990,50,300,70);
+		L6.setFont(f1);
+		add(L6);
+		L4 = new JLabel(new ImageIcon("A:\\project\\s27.jpg"));
+		L4.setBackground(c);
+		L4.setLocation(100,200);
+		L4.setSize(190,190);
+		add(L4);
+		b1 = new JButton("Edit details");
+		b1.setBounds(400,250,220,60);
+		b1.setFont(f);
+		add(b1);
+		L3 = new JLabel(new ImageIcon("A:\\project\\s30.jpg"));
+		L3.setBackground(c);
+		L3.setLocation(700,200);
+		L3.setSize(190,190);
+		add(L3);
+		b2 = new JButton("Result");
+		b2.setBounds(1000,250,220,60);
+		b2.setFont(f);
+		add(b2);
+		L2 = new JLabel(new ImageIcon("A:\\project\\s31.jpeg"));
+		L2.setBackground(c);
+		L2.setLocation(1300,200);
+		L2.setSize(190,190);
+		add(L2);
+		b3 = new JButton("logout");
+		b3.setBounds(1600,250,150,60);
+		b3.setFont(f);
+		add(b3);
+		L5 = new JLabel("SELECT COURSE :");
+		L5.setBackground(c);
+	    L5.setFont(f1);
+		L5.setLocation(500,550);
+		L5.setSize(350,60);
+		add(L5);
+		cb1 = new JComboBox();
+		cb1.setBounds(800,550,350,60);
+		cb1.setFont(f1);
+		add(cb1);
+		b4 = new JButton("start");
+		b4.setBounds(1200,550,130,60);
+		b4.setFont(f);
+		add(b4);
+		b5 = new JButton("Back");
+		b5.setBounds(50,900,150,60);
+		b5.setFont(f);
+		add(b5);
+		L7 = new JLabel("");
+		L7.setBounds(500,620,1500,70);
+		L7.setFont(f2);
+		add(L7);
+		L8 = new JLabel("");
+		L8.setBounds(700,650,600,70);
+		L8.setFont(f2);
+		add(L8);
+		
+		L10 = new JLabel("");
+		L10.setBounds(500,700,1500,70);
+		L10.setFont(f2);
+		add(L10);
+		L11 = new JLabel("");
+		L11.setBounds(500,750,1500,70);
+		L11.setFont(f2);
+		add(L11);
+		L12 = new JLabel("");
+		L12.setBounds(500,800,1500,70);
+		L12.setFont(f2);
+		add(L12);
+		L13 = new JLabel("");
+		L13.setBounds(500,850,1500,70);
+		L13.setFont(f2);
+		add(L13);
+	}
+	
+}
